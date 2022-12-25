@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <!--Link Css File-->
+    <link rel="stylesheet" href="style.css/style.css">
+</head>
+<body>
+    <div class="calculator">
+        <div class="calculation">
+            <span class="calculation-display">0</span>
+        </div>
+        <div>
+            <input type="text" class="main-display" id="screen">
+        </div>
+        <div class="buttons">
+            <div class="row">
+                <button class="btn-light"  onclick="clearScreen()">C</button>
+                <button class="btn-light" onclick="del()">DEL</button>
+                <button class="btn-light"  onclick="percentage()">%</button>
+                <button class="btn-light"  onclick="btnClick(value)" value="/">&#247</button>
+            </div>
+            <div class="row">
+                <button class="btn-number" onclick="btnClick(value)" value="7">7</button>
+                <button class="btn-number"  onclick="btnClick(value)" value="8">8</button>
+                <button class="btn-number"  onclick="btnClick(value)" value="9">9</button>
+                <button class="btn-light"  onclick="btnClick(value)" value="*">x</button>
+            </div>
+            <div class="row">
+                <button class="btn-number"  onclick="btnClick(value)" value="4">4</button>
+                <button class="btn-number"  onclick="btnClick(value)" value="5">5</button>
+                <button class="btn-number"  onclick="btnClick(value)" value="6">6</button>
+                <button class="btn-light"  onclick="btnClick(value)" value="-">-</button>
+            </div>
+            <div class="row">
+                <button class="btn-number"  onclick="btnClick(value)" value="1">1</button>
+                <button class="btn-number"  onclick="btnClick(value)" value="2">2</button>
+                <button class="btn-number"  onclick="btnClick(value)" value="3">3</button>
+                <button class="btn-light"  onclick="btnClick(value)" value="+">+</button>
+            </div>
+            <div class="row">
+                <button class="btn-number bblr"  onclick="btnClick(value)" value="0">0</button>
+                <button class="btn-number"  onclick="btnClick(value)" value=".">.</button>
+                <button class="btn-number bbrr" id="btn-eql"  onclick="findResult()">=</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="/src/calc.js"></script>
+</body>
+</html>

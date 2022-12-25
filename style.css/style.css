@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+*{
+    font-family: 'Roboto',sans-serif;
+}
+body{
+    background-color: #fef299;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.calculator{
+    width: 200px;
+    background-image: linear-gradient(to right,#7DDABE,#1374C3);
+    border-radius: 5px;
+    box-shadow: 0 0 15px #5d5d5d;
+}
+.calculation-display{
+    color: white;
+    font-size: 1.3em;
+    width: 150px;
+    font-weight: lighter;
+    padding: 0 20px;
+    display: block;
+    margin-top: 15px;
+}
+.main-display{
+    font-size: 2.5em;
+    width: 159px;
+    color: white;
+    background-image: linear-gradient(to right,#7DDABE,#1374C3);
+    border: none;
+    font-weight: lighter;
+    padding: 0 20px;
+    display: block;
+    text-align: right;
+    outline: none;
+}
+.row{
+    display: flex;
+    justify-content: space-around;
+    flex-grow: 1;
+    height: 40px;
+}
+.row button{
+    flex-grow: 1;
+    margin: 2px ;
+    border: none;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 40px;
+}
+.btn-light{
+    background-color: rgba(255, 255, 255, 0.25)!important;
+}
+button{
+    transition-duration:0.5s ;
+}
+button:hover{
+    background-color: rgba(53, 136, 184, 0.5);
+}
+#btn-eql{
+    background-color: #40D696;
+    width: 88px;
+    transition-duration: 0.5s;
+}
+#btn-eql:hover{
+    background-color: #36B97E;
+}
+.bbrr{
+    border-bottom-right-radius: 5px;
+}
+.bblr{
+    border-bottom-left-radius: 5px;
+}
