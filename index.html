@@ -11,7 +11,7 @@
 <body>
     <div class="calculator">
         <div class="calculation">
-            <span class="calculation-display">0</span>
+            <input type="text" class="calculation-display" id="undo">
         </div>
         <div>
             <input type="text" class="main-display" id="screen">
@@ -20,7 +20,7 @@
             <div class="row">
                 <button class="btn-light"  onclick="clearScreen()">C</button>
                 <button class="btn-light" onclick="del()">DEL</button>
-                <button class="btn-light"  onclick="percentage()">%</button>
+                <button class="btn-light"  onclick="percentage(value)" value="%">%</button>
                 <button class="btn-light"  onclick="btnClick(value)" value="/">&#247</button>
             </div>
             <div class="row">
@@ -49,6 +49,6 @@
         </div>
     </div>
 
-    <script src="/src/calc.js"></script>
+    <script src="./src/calc.js"></script>
 </body>
 </html>
