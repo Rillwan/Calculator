@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,47 +11,56 @@
     <!--Link Css File-->
     <link rel="stylesheet" href="style.css/style.css">
 </head>
+
 <body>
-    <div class="calculator">
-        <div class="calculation">
-            <input type="text" class="calculation-display" id="undo">
-        </div>
-        <div>
-            <input type="text" class="main-display" id="screen">
-        </div>
-        <div class="buttons">
-            <div class="row">
-                <button class="btn-light"  onclick="clearScreen()">C</button>
-                <button class="btn-light" onclick="del()">DEL</button>
-                <button class="btn-light"  onclick="percentage(value)" value="%">%</button>
-                <button class="btn-light"  onclick="btnClick(value)" value="/">&#247</button>
+    <div class="home">
+        <div class="calculator">
+            <div class="calculation">
+                <input type="text" class="calculation-display" id="undo">
             </div>
-            <div class="row">
-                <button class="btn-number" onclick="btnClick(value)" value="7">7</button>
-                <button class="btn-number"  onclick="btnClick(value)" value="8">8</button>
-                <button class="btn-number"  onclick="btnClick(value)" value="9">9</button>
-                <button class="btn-light"  onclick="btnClick(value)" value="*">x</button>
+            <div>
+                <input type="text" class="main-display" id="screen">
             </div>
-            <div class="row">
-                <button class="btn-number"  onclick="btnClick(value)" value="4">4</button>
-                <button class="btn-number"  onclick="btnClick(value)" value="5">5</button>
-                <button class="btn-number"  onclick="btnClick(value)" value="6">6</button>
-                <button class="btn-light"  onclick="btnClick(value)" value="-">-</button>
-            </div>
-            <div class="row">
-                <button class="btn-number"  onclick="btnClick(value)" value="1">1</button>
-                <button class="btn-number"  onclick="btnClick(value)" value="2">2</button>
-                <button class="btn-number"  onclick="btnClick(value)" value="3">3</button>
-                <button class="btn-light"  onclick="btnClick(value)" value="+">+</button>
-            </div>
-            <div class="row">
-                <button class="btn-number bblr"  onclick="btnClick(value)" value="0">0</button>
-                <button class="btn-number"  onclick="btnClick(value)" value=".">.</button>
-                <button class="btn-number bbrr" id="btn-eql"  onclick="findResult()">=</button>
+            <div class="buttons">
+                <div class="row">
+                    <button class="btn-light" onclick="clearScreen()">C</button>
+                    <button class="btn-light" onclick="del()">DEL</button>
+                    <button class="btn-light" onclick="percentage(value)" value="%">%</button>
+                    <button class="btn-light" onclick="btnClick(value)" value="/">&#247</button>
+                </div>
+                <div class="row">
+                    <button class="btn-number" onclick="btnClick(value)" value="7">7</button>
+                    <button class="btn-number" onclick="btnClick(value)" value="8">8</button>
+                    <button class="btn-number" onclick="btnClick(value)" value="9">9</button>
+                    <button class="btn-light" onclick="btnClick(value)" value="*">x</button>
+                </div>
+                <div class="row">
+                    <button class="btn-number" onclick="btnClick(value)" value="4">4</button>
+                    <button class="btn-number" onclick="btnClick(value)" value="5">5</button>
+                    <button class="btn-number" onclick="btnClick(value)" value="6">6</button>
+                    <button class="btn-light" onclick="btnClick(value)" value="-">-</button>
+                </div>
+                <div class="row">
+                    <button class="btn-number" onclick="btnClick(value)" value="1">1</button>
+                    <button class="btn-number" onclick="btnClick(value)" value="2">2</button>
+                    <button class="btn-number" onclick="btnClick(value)" value="3">3</button>
+                    <button class="btn-light" onclick="btnClick(value)" value="+">+</button>
+                </div>
+                <div class="row">
+                    <button class="btn-number bblr" onclick="btnClick(value)" value="0">0</button>
+                    <button class="btn-number" onclick="btnClick(value)" value=".">.</button>
+                    <button class="btn-number" onclick="btnClick(value)" value="00">00</button>
+                    <button class="btn-number bbrr" id="btn-eql" onclick="findResult()">=</button>
+                </div>
             </div>
         </div>
     </div>
 
+    <footer>
+        <a href="https://www.instagram.com/rill_wan_____/">&copy; 2024 Calculator App by Rillwan</a>.<br />
+    </footer>
+
     <script src="./src/calc.js"></script>
 </body>
+
 </html>

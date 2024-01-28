@@ -1,81 +1,133 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 
-*{
-    font-family: 'Roboto',sans-serif;
+* {
+    font-family: 'Roboto', sans-serif;
+    border: none;
+    outline: none;
+    text-decoration: none;
 }
-body{
-    background-color: #fef299;
+
+:root{
+    --purple:#6c19c6;
+    --yellow:#fef299;
+    --white:rgb(255, 255, 255);
+    --light-blue:#1374c3ba;
+
+    --blue-linear:linear-gradient(to right, #7DDABE, #1374C3);
+    --purple-linear:linear-gradient(313deg, rgba(204,44,200,1) 0%, rgba(79,11,98,1) 100%);
+}
+
+body {
+    background-color: var(--light-blue);
     margin: 0;
     padding: 0;
+}
+
+.home {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100vh;
 }
-.calculator{
-    width: 200px;
-    background-image: linear-gradient(to right,#7DDABE,#1374C3);
+
+.calculator {
+    width: 350px;
+    background: var(--blue-linear);
+    /* background-image: var(--blue-linear); */
     border-radius: 5px;
     box-shadow: 0 0 15px #5d5d5d;
 }
-.calculation-display{
+
+.calculation-display {
     color: white;
     font-size: 1.3em;
-    background-image: linear-gradient(to right,#7DDABE,#1374C3);
-    width: 150px;
+    background: transparent;
+    /* background-image: linear-gradient(to right, #7DDABE, #1374C3); */
+    width: 80%;
     font-weight: lighter;
-    padding: 0 20px;
+    padding: 0 10%;
     display: block;
     margin-top: 15px;
     outline: none;
     border: none;
 }
-.main-display{
-    font-size: 2.5em;
-    width: 159px;
+
+.main-display {
+    font-size: 3em;
+    width: 90%;
     color: white;
-    background-image: linear-gradient(to right,#7DDABE,#1374C3);
+    background: transparent;
+    /* background-image: linear-gradient(to right, #7DDABE, #1374C3); */
     border: none;
     font-weight: lighter;
-    padding: 0 20px;
+    padding: 0 5%;
     display: block;
     text-align: right;
     outline: none;
+    font-weight: bold;
 }
-.row{
+
+.row {
     display: flex;
     justify-content: space-around;
     flex-grow: 1;
-    height: 40px;
+    height: 75px;
 }
-.row button{
+
+.row button {
     flex-grow: 1;
-    margin: 2px ;
+    margin: 2px;
     border: none;
     color: white;
     background-color: rgba(255, 255, 255, 0.1);
-    width: 40px;
+    width: -webkit-fill-available;
 }
-.btn-light{
-    background-color: rgba(255, 255, 255, 0.25)!important;
+
+.btn-light {
+    background-color: rgba(255, 255, 255, 0.25) !important;
 }
-button{
-    transition-duration:0.5s ;
+
+button {
+    transition-duration: 0.5s;
+    font-weight: bold;
 }
-button:hover{
+
+.btn-number:hover {
     background-color: rgba(53, 136, 184, 0.5);
 }
-#btn-eql{
+
+.btn-light:hover {
+    font-size: 25px;
+    background-color: rgba(255, 255, 255, 0.601) !important;
+}
+
+#btn-eql {
     background-color: #40D696;
-    width: 88px;
+    width: -webkit-fill-available;
     transition-duration: 0.5s;
 }
-#btn-eql:hover{
+
+#btn-eql:hover {
+    font-size: 25px;
     background-color: #36B97E;
 }
-.bbrr{
+
+.bbrr {
     border-bottom-right-radius: 5px;
 }
-.bblr{
+
+.bblr {
     border-bottom-left-radius: 5px;
+}
+
+/* ==== footer =====  */
+footer {
+    text-align: center;
+    padding: 3px;
+    font-size: 10px;
+    background-image: linear-gradient(to right, #7DDABE, #1374C3);
+    color: white;
+}
+footer a{
+    color: white;
 }
